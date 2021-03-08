@@ -1,0 +1,11 @@
+<h2>Product List</h2>
+
+
+<table>
+    <tr><th>Products</th></tr>
+    <tr *ngFor="let prod of productlist">
+        <td>{{prod.productName}}</td>
+        <td><a routerLink="productdetails" [queryParams]={id:prod.id}>View Details</a></td>
+
+    </tr>
+</table>
