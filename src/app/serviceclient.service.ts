@@ -11,13 +11,13 @@ export class ServiceclientService {
 
   getProducts():Observable<any>{
 
-    return this.httpclient.get("http://localhost:62685/api/product")
+    return this.httpclient.get("http://localhost:5000/api/product")
 
   }
 
   getProductDetails(id:string):Observable<any>{
 
-    return this.httpclient.get("http://localhost:62685/api/product/"+id)
+    return this.httpclient.get("http://localhost:5000/api/product/"+id)
 
   }
 }
